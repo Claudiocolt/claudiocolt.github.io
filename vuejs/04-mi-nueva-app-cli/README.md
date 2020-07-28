@@ -1,4 +1,4 @@
-# 03-mi-nueva-app
+# 04-mi-nueva-app-cli
 
 ## Project setup
 ```
