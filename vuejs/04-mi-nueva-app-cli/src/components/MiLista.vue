@@ -10,7 +10,7 @@
 <script>
 export default {
   name: 'MiLista',
-  data: function() {
+  data: () => {
     return {
       lista: [
         'HTML',
