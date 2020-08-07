@@ -1,5 +1,5 @@
 <template>
-  <div class="loader">
+  <div v-bind:class="['loader', status]">     
     <div class="loader-spinner"></div>
   </div>
 </template>
@@ -8,6 +8,7 @@
 export default {
   name: 'LoaderComponent',
   props: {
+    status: String
   }
 }
 </script>
@@ -30,10 +31,14 @@ export default {
   left: 0;
   right: 0;
   z-index: 10;
-  transition: all .2s ease-in-out;
+  visibility: hidden;
+  transition: all .1s ease-in-out;
+}
+.loader.show{
   background: rgba(0, 0, 0, 0.5);
   visibility: visible;
 }
+
 .loader .loader-spinner{
   margin: 0 auto;
   height: 40px;

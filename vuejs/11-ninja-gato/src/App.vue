@@ -1,17 +1,21 @@
 <template>
   <div id="app">
-    <LoaderComponent v-if="loader" />
+    <LoaderComponent v-bind:status="status" />
 
-    <div class="buttons">
-      <Button v-for="(link, index) in links" :key="index" v-on:click="clickButton(link.name, link.url)">{{ link.name }}</Button>
+    <div class="buttonList">
+      <ButtonComponent v-for="(link, id) in links" :key="id" :name="link.name" :emoji="link.emoji" :url="link.url" />
     </div>
 
-    <ImageComponent v-if="selectedImage.url" :url="selectedImage.url" :name="selectedImage.name"/>
+    <div class="imageContainer">
+      <ImageComponent v-if="selectedImage.url" :url="selectedImage.url" :name="selectedImage.name"/>
+    </div>
+
   </div>
 </template>
 
 <script>
 import LoaderComponent from './components/LoaderComponent.vue'
+import ButtonComponent from './components/ButtonComponent.vue'
 import ImageComponent from './components/ImageComponent.vue'
 import store from '@/store'
 
@@ -22,15 +26,11 @@ export default {
   },
   components: {
     LoaderComponent,
+    ButtonComponent,
     ImageComponent
   },
-  methods: {
-    clickButton: function(name, url){
-      store.setImage(name, url);
-    }
-  },
   mounted(){
-    store.data.loader = false
+    store.data.status = "hide"
   }
 
 }
@@ -38,9 +38,19 @@ export default {
 
 <style>
 html,body{
-  background-color: cyan;
+  margin: 0;
+  padding: 0;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fcfeff;
 }
-#app {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.buttonList{
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  margin-top: 2%;
+}
+.imageContainer{
+  display: flex;
+  justify-content: center;
 }
 </style>

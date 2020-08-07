@@ -12,32 +12,22 @@ export default {
     url: String,
     name: String
   },
-  beforeCreate(){
-    store.data.loader = true
-    alert("se está cargando el componente de imagen");
-  },
-  created(){
-    console.log("imagen created");
-  },
-  beforeMount(){
-    console.log("imagen beforeMount");
-  },
   mounted(){
-    store.data.loader = false
-    console.log("imagen mounted");
+    
+    setTimeout(function(){
+      store.data.status = "hide";
+    }, 500);
+
   },
   beforeUpdate(){
     alert("se está cambiando de imagen");
-    console.log("imagen beforeUpdate");
   },
   updated(){
-    console.log("imagen updated");
-  },
-  beforeDestroy(){
-    console.log("imagen beforeDestroy");
-  },
-  destroyed(){
-    console.log("imagen destroyed");
+    
+    setTimeout(function(){
+      store.data.status = "hide";
+    }, 500);
+
   }
 }
 </script>
