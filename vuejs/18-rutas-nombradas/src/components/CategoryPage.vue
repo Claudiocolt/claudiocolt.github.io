@@ -27,9 +27,7 @@ export default {
   mounted: function(){
     
     let array_filter  = store.tipos.filter(x => x.id == this.$route.params.id);
-
     this.selected     = array_filter[0].name;
-    
 
   }
 }

@@ -24,6 +24,11 @@ export default {
         'Reviews'
       ]
     }
+  },
+  mounted: function(){
+    //Redirigir a subruta, about
+    this.$router.push({ name: 'about-restaurant', params: { restaurant: this.$route.params.restaurant } });
+
   }
 }
 </script>
