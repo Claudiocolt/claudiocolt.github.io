@@ -1,0 +1,92 @@
+{
+	"info": {
+		"_postman_id": "09874566-2f40-475a-9764-690682d5755d",
+		"name": "CodingDojo Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "https://api.themoviedb.org/3/movie/550?api_key=c1b589d7301e46bba3f6d5cb28b0f551\n",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJjMWI1ODlkNzMwMWU0NmJiYTNmNmQ1Y2IyOGIwZjU1MSIsInN1YiI6IjVmNGJkMzVlZWVjNGYzMDAzNGQyZTYzNCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ._rke7Mrhna1dl45KqtdAPkfHOejjznW1-BLWIZLTMGk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.themoviedb.org/3/movie/550?api_key=c1b589d7301e46bba3f6d5cb28b0f551\n",
+					"protocol": "https",
+					"host": [
+						"api",
+						"themoviedb",
+						"org"
+					],
+					"path": [
+						"3",
+						"movie",
+						"550"
+					],
+					"query": [
+						{
+							"key": "api_key",
+							"value": "c1b589d7301e46bba3f6d5cb28b0f551\n"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://pokeapi.co/api/v2/ability/4",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://pokeapi.co/api/v2/ability/4",
+					"protocol": "https",
+					"host": [
+						"pokeapi",
+						"co"
+					],
+					"path": [
+						"api",
+						"v2",
+						"ability",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://pokeapi.co/api/v2/pokemon/celebi",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://pokeapi.co/api/v2/pokemon/celebi",
+					"protocol": "https",
+					"host": [
+						"pokeapi",
+						"co"
+					],
+					"path": [
+						"api",
+						"v2",
+						"pokemon",
+						"celebi"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
