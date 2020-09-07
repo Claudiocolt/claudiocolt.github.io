@@ -1,0 +1,132 @@
+.content-header
+  position: relative
+  z-index: 2
+  height: 54px
+  display: flex
+  justify-content: space-between
+  background-color: white
+  color: $gray-0
+  &.shadow
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.2)
+  
+  ul.non-list
+    list-style: none
+    margin: 0
+    padding: 0
+    display: flex
+
+    li
+      display: flex
+      align-items: center
+
+      a.icon
+        display: block
+        text-decoration: none
+        color: #797b90
+        width: 22px
+        text-align: center
+
+      a.link
+        color: #797b90
+        text-decoration: none
+        padding: 4px 8px
+        border-radius: 3px
+        &:hover
+          background-color: #f7f7f7
+        &:active
+          background-color: #f1f1f1
+        &.selected
+          color: #696b75
+          background-color: #e5e5e6
+          font-weight: 500
+
+  
+  .separator
+    color: #e0e0e0
+
+  .profile-link
+    text-decoration: none
+    color: $gray-0
+    border-radius: 3px
+    padding: 4px
+    &:hover
+      background-color: #f9f9f9
+    &:active
+      background-color: #ececec
+
+    .profile-link__img
+      width: 38px
+      height: 38px
+      margin-right: 8px
+      img
+        width: 100%
+        height: 100%
+        border-radius: 19px
+
+    .profile-link__main
+      font-size: 14px
+      line-height: 14px
+      font-weight: 700
+
+    .profile-link__sub
+      font-size: 13px
+      line-height: 13px
+      font-weight: 400
+      margin-top: 2px
+
+
+
+
+
+.content-bar
+  position: relative
+  display: flex
+  justify-content: space-between
+  height: 36px
+  background-color: white
+  // background-color: #f3f3f3
+  z-index: 1
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.2)
+
+  ul.non-list
+    list-style: none
+    margin: 0
+    padding: 0
+    display: flex
+    height: 28px
+
+    li
+      display: flex
+      align-items: center
+
+      a.icon
+        display: block
+        text-decoration: none
+        color: #797b90
+        width: 22px
+        text-align: center
+
+      a.link
+        color: #797b90
+        text-decoration: none
+        padding: 4px 8px
+        border-radius: 3px
+        &:hover
+          background-color: #f7f7f7
+        &:active
+          background-color: #f1f1f1
+        &.selected
+          color: #696b75
+          background-color: #e5e5e6
+          font-weight: 500
+
+      .content-bar-link
+        text-decoration: none
+        color: #696b75
+        &:hover
+          color: green
+        &.selected
+          margin-top: 12px
+          padding-bottom: 8px
+          border-bottom: 3px solid #3f97f3
+          color: darken($color: #696b75, $amount: 50%)

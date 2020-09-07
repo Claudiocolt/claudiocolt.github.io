@@ -1,0 +1,38 @@
+.flex
+  display: flex
+  
+  &.fd-r
+    flex-direction: row
+  &.fd-rr
+    flex-direction: row-reverse
+  &.fd-c
+    flex-direction: column
+  &.fd-cr
+    flex-direction: column-reverse
+  
+  
+  &.ai-c
+    align-items: center
+  &.ai-fs
+    align-items: flex-start
+  &.ai-fe
+    align-items: flex-end
+
+
+  &.jc-c
+    justify-content: center
+  &.jc-sb
+    justify-content: space-between
+  &.jc-sa
+    justify-content: space-around
+  &.jc-fs
+    justify-content: flex-start
+  &.jc-fe
+    justify-content: flex-end
+
+  .flex-1
+    flex: 1
+
+  @for $i from 1 through 99
+    .flex-#{$i}p
+      flex: 0 0 ($i*1%)

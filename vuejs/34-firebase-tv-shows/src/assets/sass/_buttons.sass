@@ -1,0 +1,40 @@
+.btn
+  display: block
+  padding: 10px 10px
+  width: 100%
+  border-radius: 3px
+  outline: 0px transparent
+  text-align: center
+  text-decoration: none
+  cursor: pointer
+  font-family: $font-nunito
+
+@each $name, $value in $my-colors
+
+  @if $value == $white
+  
+    .btn-#{$name}
+      background-color: $bone
+      border: 1px solid darken($bone, 14%)
+      color: darken($bone, 40%)
+      > svg
+        color: inherit
+      &:hover
+        background-color: $white
+      &:active
+        background-color: darken($bone, 4%)
+  
+  @else
+    
+    .btn-#{$name}
+      background-color: $value
+      border: 1px solid $value
+      color: white
+  
+      &:hover
+        background-color: lighten($value, 3%)
+        border: 1px solid lighten($value, 3%)
+        color: white
+      &:active
+        background-color: darken($value, 6%)
+        border: 1px solid darken($value, 6%)
