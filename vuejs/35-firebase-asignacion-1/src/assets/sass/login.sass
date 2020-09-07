@@ -1,0 +1,108 @@
+@import 'vars'
+@import 'buttons'
+@import 'fonts'
+@import 'flex'
+@import 'overrides'
+
+body
+  margin: 0
+  padding: 0
+  background-color: #1a3a71
+  font-size: 14px
+  font-family: $font-nunito
+
+.app
+  background-color: #1a3a71
+  position: absolute
+  height: 100vh
+  width: 100%
+  // background-image: url($basepath+'img/bg_portal.png')
+  // background-size: cover
+
+  //   div::after
+  // background: url(image.jpg);
+  // opacity: 0.5;
+  // top: 0;
+  // left: 0;
+  // bottom: 0;
+  // right: 0;
+  // position: absolute;
+  // z-index: -1;
+
+
+
+  .login-container
+    margin-top: -20vh
+
+    .logo
+      width: 110px
+
+    .login
+      background-color: #f9f9f9
+      box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.4)
+      padding: 30px 38px
+      border-radius: 3px
+      font-size: 13px
+      text-align: center
+      color: #797e88
+
+      #form-login, #form-forgot, #form-reset
+        // background-color: red
+        text-align: left
+        width: 230px
+        & label
+          display: block
+          font-size: 12px
+          color: #69758a
+        & input
+          font-family: $font-nunito
+          outline: 0px transparent
+          margin: 0
+          padding: 5px 10px
+          color: #253859
+          border: 1px solid #ced2d8
+          border-radius: 2px
+
+
+  //   display: flex;
+  //   flex-direction: column;
+  //   width: 400px;
+  //   box-sizing: border-box;
+  //   color: rgb(94, 108, 132);
+  //   margin: 0px auto 24px;
+  
+
+  .bg-pink
+    background-color: pink
+  .bg-white
+    background-color: white
+
+  .bttn-void
+    background-color: white
+    border: 1px solid #a3b2cc
+    color: $blue-1
+  
+  .bttn-light-blue
+    background-color: #3f97f3
+    border: 1px solid #3f97f3
+    color: #ffffff
+
+
+  .alert
+    position: relative
+    padding: 10px 16px
+    margin-bottom: 6px
+    border: 1px solid transparent
+    border-radius: 3px
+
+
+  .alert-success
+    color: #155724
+    background-color: #d4edda
+    border-color: #c3e6cb
+    max-width: 200px
+
+.flash
+  color: $red
+  text-align: left
+  font-weight: 700

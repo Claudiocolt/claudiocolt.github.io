@@ -1,0 +1,60 @@
+
+// Body
+//$body-bg: #f8fafc;
+
+// Typography
+$font-nunito: "Nunito", sans-serif
+//$font-size-base: 0.9rem;
+//$line-height-base: 1.6;
+
+
+
+// Definiendo nombres de colores
+// Y armando array con ellos para hacer loops
+
+// Colors
+$red: #dc6060
+$blue: #7289da
+$green: #43b581
+$white: #ffffff
+
+// ToFix
+$indigo: #6574cd
+$purple: #9561e2
+$pink: #f66D9b
+$orange: #f6993f
+$yellow: #ffed4a
+
+$teal:    #4dc0b5
+$cyan:    #6cb2eb
+
+$base:    #f4f3f7
+$dark:    #323446
+$darker:  #2a2e3a
+$gray-0: #505263
+$gray-1: #696b75
+$gray-2: #a8acb8
+
+$sky:     #f9f9f9 !default
+$silver:  #f7f7f7 !default
+$bone:    #fdfdfd !default
+
+//
+$blue-1: #2e5290
+$blue-2: #2e5290
+
+  
+$array-primary: ("white": $white,   "red": $red,        "blue": $blue,      "orange": $orange,  "yellow": $yellow, "green": $green)
+$array-extras:  ("purple": $purple, "pink": $pink,      "indigo": $indigo,  "teal": $teal,      "cyan": $cyan)
+$array-blues:   ("blue-1": $blue-1, "blue-2": $blue-2)
+$array-bw:      ("base": $base,     "dark": $dark,      "darker": $darker,  "sky": $sky,        "silver": $silver, "bone": $bone)
+$array-grays:   ("gray-0": $gray-0, "gray-1": $gray-1,  "gray-2": $gray-2)
+
+
+
+$my-colors: () !default
+$my-colors: map-merge($array-primary, $my-colors)
+$my-colors: map-merge($array-extras,  $my-colors)
+$my-colors: map-merge($array-blues,  $my-colors)
+$my-colors: map-merge($array-bw,      $my-colors)
+$my-colors: map-merge($array-grays,   $my-colors)
