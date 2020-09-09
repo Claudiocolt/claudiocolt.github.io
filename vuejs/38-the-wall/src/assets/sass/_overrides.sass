@@ -1,0 +1,176 @@
+.m-auto
+  margin: 0 auto
+.mx-0
+  margin-left: 0 !important
+  margin-right: 0 !important
+.px-0
+  padding-left: 0 !important
+  padding-right: 0 !important
+
+@for $i from 1 through 50
+
+  // Paddings
+  .p-#{$i}
+    padding: $i * 1px !important
+  .pt-#{$i}
+    padding-top: $i * 1px !important
+  .pr-#{$i}
+    padding-right: $i * 1px !important
+  .pb-#{$i}
+    padding-bottom: $i * 1px !important
+  .pl-#{$i}
+    padding-left: $i * 1px !important
+
+
+  // Padding Vertical
+  .py-#{$i}
+    padding-top: $i * 1px !important
+    padding-bottom: $i * 1px !important
+
+  // Padding Horizontal
+  .px-#{$i}
+    padding-left: $i * 1px !important
+    padding-right: $i * 1px !important
+
+
+  // Margins
+  .m-#{$i}
+    margin: $i * 1px !important
+  .mt-#{$i}
+    margin-top: $i * 1px !important
+  .mt-#{$i}p
+    margin-top: $i * 1% !important
+  .mr-#{$i}
+    margin-right: $i * 1px !important
+  .mb-#{$i}
+    margin-bottom: $i * 1px !important
+  .ml-#{$i}
+    margin-left: $i * 1px !important
+
+
+  // Margin Vertical
+  .my-#{$i}
+    margin-top: $i * 1px !important
+    margin-bottom: $i * 1px !important
+
+  // Margin Horizontal
+  .mx-#{$i}
+    margin-left: $i * 1px !important
+    margin-right: $i * 1px !important
+
+
+
+
+  // Heights
+  .h-#{$i}
+    height: $i * 1px !important
+    line-height: $i * 1px !important
+
+
+  //-----------------------------
+  //        Font Size
+  //-----------------------------
+  .fz-#{$i}
+    font-size: $i * 1px !important
+
+
+  //-----------------------------
+  //        Line  Heigth
+  //-----------------------------
+  .lh-#{$i}
+    line-height: $i * 1px !important
+
+
+
+
+
+//-----------------------------
+//      Height & Width
+//-----------------------------
+
+@for $i from 1 through 120
+  .h-#{$i}
+    height: $i * 1px !important
+    line-height: $i * 1px !important
+  .w-#{$i}
+    width: $i * 1px !important
+
+  
+
+//-----------------------------
+//        Width %
+//-----------------------------
+@for $i from 1 through 100
+  .w-#{$i}p
+    width: $i * 1% !important
+
+
+
+
+//-----------------------------
+//        Font Weight
+//-----------------------------
+@for $i from 1 through 9
+  .fw-#{$i}
+    font-weight: $i * 100 !important
+
+
+
+//-----------------------------
+//        Border Radius
+//-----------------------------
+@for $i from 1 through 8
+  .br-#{$i}
+    border-radius: $i * 1px !important
+
+
+
+.vh-100
+  height: 100vh
+
+
+
+
+
+//-----------------------------
+//        Text Align
+//-----------------------------
+.ta-r
+  text-align: right
+.ta-l
+  text-align: left
+.ta-c
+  text-align: center
+.ta-j
+  text-align: justify
+
+
+
+
+
+//-----------------------------
+//        Text Colors
+//-----------------------------
+
+@each $color, $value in $my-colors
+  .text-#{$color}
+    color: $value !important
+
+
+
+//-----------------------------
+//        Bg Colors
+//-----------------------------
+
+@each $color, $value in $my-colors
+  .bg-#{$color}
+    background-color: $value !important
+
+
+
+
+.color-blue
+  color: blue
+
+.color-dark
+  color: #6c6e84
